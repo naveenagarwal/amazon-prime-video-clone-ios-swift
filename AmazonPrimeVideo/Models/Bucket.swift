@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Bucket {
+    let name: String
+    let title: String
+    let showMore: Bool
+}

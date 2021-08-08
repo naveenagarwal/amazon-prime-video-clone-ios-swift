@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct Banner: View {
+    
+    var bannerTitleList: [MovieList] = []
+    
+    
+    init(bannerTitles: [MovieList]) {
+        self.bannerTitleList = bannerTitles
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Carousel(bannerTitleList: self.bannerTitleList)
     }
-}
-
-struct Banner_Previews: PreviewProvider {
-    static var previews: some View {
-        Banner()
-    }
+    
+    
+    
 }
